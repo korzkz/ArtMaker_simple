@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+.rabbit_frame {
+    width: 790px;
+    height: 790px;
+    border: 5px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+.sq {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    user-select: none;
+    background-color: black;
+}
+
+.sq:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.rabbit {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-image: url(rabbit.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.color_picker_text {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 20px;
+}
+
+#color_picker_input {
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#color_picker_input::-webkit-color-swatch {
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+#color_picker_input::-moz-color-swatch {
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.containerr {
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color_picker {
+    margin: 30px 150px;
+    height: 50px;
+}
