@@ -17,10 +17,12 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.08);
     user-select: none;
     background-color: black;
+    cursor: cell;
 }
 
 .sq:hover {
     background-color: rgb(41, 41, 41);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .rabbit {
@@ -36,6 +38,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-size: 20px;
+    user-select: none;
 }
 
 #color_picker_input {
@@ -72,4 +75,30 @@ body {
 .color_picker {
     margin: 30px 150px;
     height: 50px;
+}
+
+.frame_deleter {
+    width: 60px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.frame_deleter_frame {
+    display: flex;
+    width: 150px;
+    height: 70px;
+    justify-content: center;
+    margin: 30px 150px;
+}
+
+.frame_deleter_frame p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    user-select: none;
+    margin: 0 10px;
+    color: white;
 }
