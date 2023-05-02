@@ -60,10 +60,15 @@ button.addEventListener("click", function() {
 
 var border_selected = (element) => {
     element.target.style.borderColor = 'white'
+    element.target.style.border = '2px solid white'
 }
 
 var border_selected_out = (elemen) => {
-    elemen.target.style.borderColor = ''
+    elemen.target.style.border = '2px solid rgba(255, 255, 255, 0.08)'
+    if (isClicked == true) {
+        elemen.target.style.border = '2px solid rgba(255, 255, 255, 0)'
+    }
+
 
 }
 
